@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Lab Staff</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/icecream.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+    <style>
+        .come {
+            width: 257px;
+            margin: 5px;
+        }
+        .setup{
+            width:250px;    
+        }
+        textarea {
+            width: 182px;
+            margin-top: 2px;
+            margin-left: 4px;
+            height: 54px;
+        }
+
+        .areabut {
+            float: right;
+            margin-top: 2px;
+        }
+    </style>
+
+    <script src="scripts/Jquery.touch.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
+
+    <div class="center" style="display:none">
+
+        <div class="brick" onclick="window.location.href='/contact.html'" data-sound="mario.mp3">
+            <img id="sean" src="images/phone.jpg" />
+
+        </div>
+
+        <div class="brick" onclick="window.location.href='/wifi.html'" data-sound="mario.mp3">
+            <img src="images/wifi.jpeg" />
+
+        </div>
+
+
+      
+
+        <div class="brick tile" onclick="window.location.href='https://www.portseattle.org/sea-tac/flight-status/'" data-sound="mario.mp3">
+            <div style="font-size: 6vw;padding-top: 10%; text-align:center">FLIGHT</div>
+            <div style="font-size: 13vw; text-align:center">
+                <i class="fas fa-plane"></i>
+        </div>
+        </div>
+
+
+        <div class="brick tile" onclick="window.location.href='http://msshuttleservices.com/'" data-sound="mario.mp3">
+            <div style="font-size: 5vw;padding-top: 10%; text-align:center">SHUTTLE</div>
+            <div style="font-size: 14vw; text-align:center">
+                <i class="fas fa-bus"></i>
+        </div>
+        </div>
+<div style="float:left;">
+        
+        <div class="brick tile" onclick="window.location.href='/Entertainment.html'" data-sound="mario.mp3">
+            <div style="font-size: 3vw;padding-top: 10%; text-align:center">Entertainment</div>
+            <div style="font-size: 15vw; text-align:center">
+                <i class="fas fa-theater-masks"></i>
+        </div>
+        </div>
+        
+
+      
+ 
+      
+        <div class="brick tile" onclick="window.location.href='/Resturaunts.html'" data-sound="mario.mp3">
+            <div style="font-size: 4vw;padding-top: 10%; text-align:center">Resturaunts</div>
+            <div style="font-size: 15vw; text-align:center">
+                <i class="fas fa-utensils"></i>
+        </div>
+        </div>
+      
+      
+        <div class="brick tile" onclick="window.location.href='/default.html'" data-sound="mario.mp3">
+            <div style="font-size: 5vw;padding-top: 10%; text-align:center">Lab Staff</div>
+            <div style="font-size: 15vw; text-align:center">
+                <i class="fas fa-arrow-left"></i>
+        </div>
+        </div>
+      
+        
+       
+        
+    </div>
+    </div>
+
+   
+
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+         <h1 style="font-size:1400%">ICE CREAM</h1>
+        </div>
+      </div>
+      
+
+
+    <script>
+
+    </script>
+    <script src="scripts/more.js"></script>
+
+    <audio id="sound" class="sound-player" style="display:none;">
+
+
+        <source class="sound" src="" />
+
+        <embed id="esound" class="sound" src="" hidden="true" autostart="true" loop="false" />
+
+    </audio>
+    <script src="scripts/Konami.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/icecream.js"></script>
+</body>
+</html>

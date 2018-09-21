@@ -1,0 +1,58 @@
+﻿.container {
+}
+
+.bio ,.brick{
+    float: left;
+    padding: 1px 7px 0px 0px;
+    overflow: hidden;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    cursor: pointer;
+  
+}
+
+.name {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+}
+
+body {
+    float: right;
+    width:100%;
+   margin-top:6px;
+   }
+
+
+.choice {
+    box-shadow: rgb(41, 187, 255) 0px -3px 7px 0px inset;
+    background: linear-gradient(rgb(45, 171, 249) 5%, rgb(6, 136, 250) 100%) rgb(45, 171, 249);
+    border-radius: 3px;
+    border: 1px solid rgb(11, 14, 7);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 28px;
+    padding: 9px 29px;
+    text-decoration: none;
+    text-shadow: rgb(38, 54, 102) 0px 1px 0px;
+}
+
+.tile
+{
+    border-radius: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+
+}

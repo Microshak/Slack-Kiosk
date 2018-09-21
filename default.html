@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Lab Staff</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/icecream.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+    <style>
+        .come {
+            width: 257px;
+            margin: 5px;
+        }
+        .setup{
+            width:250px;    
+        }
+        textarea {
+            width: 182px;
+            margin-top: 2px;
+            margin-left: 4px;
+            height: 54px;
+        }
+
+        .areabut {
+            float: right;
+            margin-top: 2px;
+        }
+    </style>
+
+    <script src="scripts/Jquery.touch.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
+
+    <div class="center" style="display:none">
+        <div class="bio" data-name="Sean Kelly" id="SeanK" data-sound="mario.mp3">
+            <img id="sean" src="images/sean.jpg" />
+        </div>
+        <div class="bio" data-name="Barron Barnett" id="barron" data-sound="mario.mp3">
+            <img src="images/barron.jpg" style="cursor:crosshair" />
+        </div>
+        <div class="bio" data-name="Mike Roshak" data-sound="mario.mp3" id="microshak">
+            <img src="images/mike.jpg" />
+        </div>
+        <div class="bio" data-name="Conner" data-sound="mario.mp3" id="U75U7KATG">
+            <img src="images/conner.jpg" />
+        </div>
+
+<div style=float:left;>
+        <div class="bio" data-name="Andre" id="U753T1LJY" data-sound="mario.mp3" style="clear:left;">
+            <img src="images/AndreCloud.jpg" />
+
+        </div>
+
+        <div class="bio" data-name="Wendy" data-sound="mario.mp3" id="U913XPZV0">
+
+            <img src="images/wendy.jpg" />
+        </div>
+
+
+
+        <div class="bio" data-name="Everyone" data-sound="mario.mp3" id="general">
+            <img src="images/Lab.png" />
+        </div>
+
+
+        <div class="brick tile" onclick="window.location.href='/more.html'" data-sound="mario.mp3">
+            <div style="font-size: 900%;padding-top: 20%; text-align:center">More</div>
+            <div style="font-size: 900%; text-align:center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        </div>
+
+
+    </div>
+        
+
+    <div id="Setup" title="SetUp" style="display:none;">
+
+        <input  class="ui-button ui-widget ui-corner-all setup" type="submit" onclick="window.location='/?room=LoveLace'" value="LoveLace">
+        <input  class="ui-button ui-widget ui-corner-all  setup " type="submit" onclick="window.location='/?room=jemison'" value="Jemison Lab">
+        <input  class="ui-button ui-widget ui-corner-all  setup" type="submit" onclick="window.location='/?room=C1472'" value="1472 Conference Room">
+        <input  class="ui-button ui-widget ui-corner-all  setup" type="submit" onclick="window.location='/?room=C1476'" value="1476 Conference Room">
+        <input class="ui-button ui-widget ui-corner-all  setup" type="submit" onclick="window.location='/?room=All'" value="All Rooms">
+
+    </div>
+
+
+
+    <div id="dialog" title="Lab Message" style="display:none;">
+
+        <input id="Lovelace" class="ui-button ui-widget ui-corner-all come" type="submit" onclick="getTech('Come to Lovelace Lab')" value="Come Lovelace Lab">
+        <input id="Jemison" class="ui-button ui-widget ui-corner-all  come" type="submit" onclick="getTech('Come to Jemison')" value="Come to Jemison Lab">
+        <input id="C1472" class="ui-button ui-widget ui-corner-all come" type="submit" onclick="getTech('Come to 1472 Confrance Room')" value="Come to 1472 Conference Room">
+        <input id="C1476" class="ui-button ui-widget ui-corner-all come" type="submit" onclick="getTech('Come to 1476 Confrance Room')" value="Come to 1476 Conference Room">
+        <div id="more" style="float:right; color:blue; clear:left; width:100%; display:none;">
+            <href ="#" onclick="$('.come').show()" style="color:blue;float:right;">more</href>
+        </div>
+        <textarea id="message"></textarea>
+        <input class="ui-button ui-widget ui-corner-all areabut" type="submit" value="Send" style="margin-top:30px ;" onclick="getMessageTech()">
+        <input class="ui-button ui-widget ui-corner-all" type="submit" value="Cancel" style="margin-top:6px ;" onclick="cancel()">
+
+    </div>
+
+
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+         <h1 style="font-size:1400%">ICE CREAM</h1>
+        </div>
+      </div>
+      
+
+
+    <script>
+
+    </script>
+    <script src="scripts/index.js"></script>
+
+    <audio id="sound" class="sound-player" style="display:none;">
+
+
+        <source class="sound" src="" />
+
+        <embed id="esound" class="sound" src="" hidden="true" autostart="true" loop="false" />
+
+    </audio>
+    <script src="scripts/Konami.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/icecream.js"></script>
+</body>
+</html>
